@@ -1,8 +1,3 @@
-// function parse(equation) {
-//   const step = getNextStep()
-//   const result = solve(step)
-//   replaceNextStep(equation, step, result)
-// }
 import parse from "./parse.js"
 
 const form = document.querySelector("#equation-form")
@@ -14,7 +9,6 @@ form.addEventListener("submit", (e) => {
   e.preventDefault()
 
   results.textContent = parse(input.value)
-  console.log(results)
 })
 
 clear.addEventListener("click", () => {
